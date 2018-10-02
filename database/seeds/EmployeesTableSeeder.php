@@ -36,7 +36,8 @@ class EmployeesTableSeeder extends Seeder
         ]);
 
         $employee = factory(Employee::class)->create([
-            'email' => 'john@doe.com'
+            'email' => 'john@doe.com',
+            'password' => bcrypt('admin123')
         ]);
 
         $super = factory(Role::class)->create([
